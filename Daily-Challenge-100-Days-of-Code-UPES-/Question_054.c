@@ -46,6 +46,7 @@ int main()
         }
         printf("\n");
     }
+    return 0;
 }
 /*
 Sample Test Cases:
