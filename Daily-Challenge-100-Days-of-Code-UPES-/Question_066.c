@@ -1,45 +1,40 @@
-//Q66: Insert an element in a sorted array at the appropriate position.
-#include<stdio.h>
-int insert(int n,int a[],int num);
-int main(){
-    int n,i,a[10],num;
+// Q66: Insert an element in a sorted array at the appropriate position.
+#include <stdio.h>
+int main()
+{
+    int n, i, a[10], num;
+    int temp;
     printf("Size of array");
-    scanf("%d",&n);
+    scanf("%d", &n);
     printf("Enter the element in array");
-    for(i=0;i<n;i++)
+    for (i = 0; i < n; i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d", &a[i]);
     }
     printf("Number you want to enter:");
-    scanf("%d",&num);
-    insert(n,a,num);
-    return 0;
-}
-int insert(int n,int a[],int num)
-{
-    int i,temp;
-    for(i=0;i<n;i++)
+    scanf("%d", &num);
+    for (i = 0; i < n; i++)
     {
-        if(a[i]>num)
+        if (a[i] > num)
         {
-            a[-1]=num;
-            for(i=-1;i<n;i++)
+            a[-1] = num;
+            for (i = -1; i < n; i++)
             {
-                printf("%d\t",a[i]);
+                printf("%d\t", a[i]);
             }
             return 0;
         }
-        if(a[i]<num && a[i+1]>num)
+        if (a[i] < num && a[i + 1] > num)
         {
-            temp=a[i+1];
-            a[i+1]=num;
-            num=temp;
+            temp = a[i + 1];
+            a[i + 1] = num;
+            num = temp;
         }
     }
     printf("The new sorted array is:");
-    for(i=0;i<=n;i++)
+    for (i = 0; i <= n; i++)
     {
-        printf("%d\t",a[i]);
+        printf("%d\t", a[i]);
     }
     return 0;
 }

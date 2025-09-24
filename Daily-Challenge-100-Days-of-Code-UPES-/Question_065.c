@@ -1,51 +1,38 @@
 // Q65: Search in a sorted array using binary search.
-#include<stdio.h>
-int binarySearch(int arr[],int size,int target);
+#include <stdio.h>
 int main()
 {
-        int arr[10],n,i,result,target;
-        int size=sizeof(arr)/sizeof(arr[0]);
-        printf("Enter the size of array:");
-        scanf("%d",&n);
-        printf("Enter the elements of array:");
-        for(i=0;i<n;i++)
-        {
-            scanf("%d",&arr[i]);
-        }
-        printf("Enter the element to be searched:");
-        scanf("%d",&target);
-        result=binarySearch(arr,size,target);
-        if(result==-1)
-        {
-            printf("Element not found");
-        }
-        else
-        {
-            printf("Element found at index %d",result);
-        }
-        return 0;
-}
-int binarySearch(int arr[],int size,int target)
-{
-    int left=0,right=size-1,mid;
-    while(left<=right)
+    int arr[10], n, i, result, target;
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int left = 0, right = size - 1, mid;
+    printf("Enter the size of array:");
+    scanf("%d", &n);
+    printf("Enter the elements of array:");
+    for (i = 0; i < n; i++)
     {
-        mid=left+(right-left)/2;
-        if(arr[mid]==target)
+        scanf("%d", &arr[i]);
+    }
+    printf("Enter the element to be searched:");
+    scanf("%d", &target);
+    
+    while (left <= right)
+    {
+        mid = left + (right - left) / 2;
+        if (arr[mid] == target)
         {
-            return mid;
+            printf("Found at index %d",mid);
         }
-
-        if(arr[mid]>target)
+        if (arr[mid] > target)
         {
-            right=mid-1;
+            right = mid - 1;
         }
         else
         {
-            left=mid+1;
+            left = mid + 1;
         }
     }
-        return -1;      
+
+    return 0;
 }
 /*
 Sample Test Cases:
