@@ -33,6 +33,7 @@ int main()
     {
         printf("%d\t",c[i]);
     }
+    return 0;
 }
 /*
 Sample Test Cases:

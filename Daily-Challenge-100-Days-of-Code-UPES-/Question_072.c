@@ -4,7 +4,7 @@
 int main()
 {
     int rows,columns;
-    int matrix[3][3],i,j,sum=0;
+    int matrix[100][100],i,j,sum=0;
     printf("Enter the rows:");
     scanf("%d",&rows);
     printf("Enter the colums:");

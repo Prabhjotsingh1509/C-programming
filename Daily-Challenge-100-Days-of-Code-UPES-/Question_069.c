@@ -26,6 +26,7 @@ int main()
         }   
     }
     printf("The second largest element in an array is: %d",second);  
+    return 0;
 }
 /*
 Sample Test Cases:
