@@ -8,11 +8,6 @@ int main()
     int num,digit,r,sum=0,temp;
     printf("Enter the integer");
     scanf("%d",&num);
-    if(num>=11 && num<=775)
-    {
-        printf("not in rnage");
-        return 0;
-    }
     temp=num;
     while(temp!=0)
     {

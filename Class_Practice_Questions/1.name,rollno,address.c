@@ -5,7 +5,7 @@ int main()
 {
     char name[20];
     int roll_no;
-    char address[20];
+    char address[40];
     printf("Enter the student name");
     scanf("%s",&name);
     fflush(stdin);

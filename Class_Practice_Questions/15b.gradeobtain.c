@@ -7,29 +7,38 @@ int main()
     int n,num;
     printf("Enter the number=");
     scanf("%d",&num);
+    if(num==100)
+    {
+        printf("Grade A");
+        return 0;
+    }
     n=num/10;
     switch(n)
     {
-        case 10:
-        printf("Grade A");
-        break;
-        case 9:
-        printf("Grade B");
-        break;
-        case 8:
-        printf("Grade C");
-        break;
-        case 7:
-        printf("Grade D");
-        break;
-        case 6:
-        printf("Grade E");
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        printf("The Grade=Fail");
         break;
         case 5:
-        printf("Grade F");
+        printf("The Grade=E");
+        break;
+        case 6:
+        printf("The Grade=D");
+        break;
+        case 7:
+        printf("The Grade=C");
+        break;
+        case 8:
+        printf("The Grade=B");
+        break;
+        case 9:
+        printf("The Grade=A");
         break;
         default:
-        printf("Fail");
+        printf("Invalid");
         break;
     }
     return 0;
