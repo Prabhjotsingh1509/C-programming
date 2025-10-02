@@ -4,17 +4,18 @@
 int main()
 {
     int arr[100];
-    int i,sum=0,avg;
+    int i,sum=0;
+    float avg;
     printf("Enter the number:\n");
-    for(i=0;i<10;i++)
+    for(i=0;i<40;i++)
     {
         scanf("%d",&arr[i]);
     }
-    for(i=0;i<10;i++)
+    for(i=0;i<40;i++) 
     {
         sum+=arr[i];
     }
-    avg=sum/40;
-    printf("The average of numbers:%d",avg);
+    avg=(float)sum/40;
+    printf("The average of numbers:%f",avg);
     return 0;
 }
