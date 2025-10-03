@@ -4,9 +4,9 @@ int main()
 {
     char ch;
     printf("Enter the character=");
-    scanf("%d",&ch);
+    scanf("%c",&ch);
 
-    if(ch=='a'||'e'||'i'||'o'||'u'||'A'||'E'||'I'||'O'||'U')
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
     {
         printf("It is vowels");
     }
