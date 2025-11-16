@@ -1,5 +1,6 @@
 // Q134: Define an enum with SUCCESS, FAILURE, and TIMEOUT, and print messages accordingly.
 #include<stdio.h>
+#include<string.h>
 
 enum OPERATIONS {
     SUCCESS,
@@ -9,8 +10,23 @@ enum OPERATIONS {
 
 int main()
 {
-    enum OPERATIONS status=FAILURE;
+    char st[30];
+    enum OPERATIONS status;
 
+    printf("Enter the operation status:");
+    scanf("%s",st);
+    if(strcmp(st,"FAILURE") == 0)
+    {
+        status = FAILURE;
+    }
+    else if(strcmp(st,"SUCCESS") == 0)
+    {
+        status = SUCCESS;
+    }
+    else 
+    {
+        status = TIMEOUT;
+    }
     switch(status)
     {
         case FAILURE:
