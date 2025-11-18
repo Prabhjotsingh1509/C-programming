@@ -21,10 +21,6 @@ All the problems I solve are from the following resource(s):
 ---
 
 ## 📅 Day-wise Progress
-
-| Day | Problem Link | Solution |
-|-----|--------------|----------|
-| 1   | [Question 1] | [Solution] |
-| ... | ...          | ...      |
+Day90 is completed
 
 
