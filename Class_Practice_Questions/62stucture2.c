@@ -1,4 +1,4 @@
-// WAP to create a custom data type using structures and arrays to represent a real world entity such as book and student.
+// WAP to create a custom data type using structures allowing grouping of variables to represent a real world entity such as book and student.
 #include<stdio.h>
 #include<string.h>
 
