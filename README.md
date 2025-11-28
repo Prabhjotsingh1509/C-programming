@@ -21,6 +21,6 @@ All the problems I solve are from the following resource(s):
 ---
 
 ## 📅 Day-wise Progress
-Day90 is completed
+Day100 is completed
 
 
